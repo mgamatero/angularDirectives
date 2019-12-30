@@ -1,0 +1,13 @@
+<!-- <p *ngFor = 'let person of people; let i = index'>{{person.name}},{{person.age}},{{person.city}},<img src={{person.picture}} width="100rem"/></p> -->
+<hr>
+<button class="btn btn-success" (click)="initArray()">Reset</button>
+
+<ul>
+  <li *ngFor = "let person of people;let i= index" [ngClass] = "getCSSClass(person.age)">
+    <img [src]="person.picture" [ngStyle]="imgStyles">
+  {{person.name}} is from {{person.city}}
+  Age is {{person.age}}
+<button class="btn btn-warning l-1" (click)="delete(i)">X</button>
+  </li>
+
+</ul>

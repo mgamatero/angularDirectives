@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { NgforofDemoComponent } from './components/ngforof-demo/ngforof-demo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NgforofDemoComponent
   ],
   imports: [
     BrowserModule
