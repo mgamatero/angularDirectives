@@ -1,4 +1,8 @@
 <!-- <p *ngFor = 'let person of people; let i = index'>{{person.name}},{{person.age}},{{person.city}},<img src={{person.picture}} width="100rem"/></p> -->
+
+<hr>
+<h4 *ngIf = "people.length > 0">There are {{people.length}} contacts</h4>
+<h4 *ngIf = "people.length === 0">No contacts available</h4>
 <hr>
 <button class="btn btn-success" (click)="initArray()">Reset</button>
 
